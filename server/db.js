@@ -20,9 +20,7 @@
 const mongoose = require("mongoose");
 try {
   mongoose.connect(
-    `mongodb://ram:${encodeURIComponent(
-      "123456789!@#$%^&*"
-    )}@ac-vaaawja-shard-00-00.gwndkto.mongodb.net:27017,ac-vaaawja-shard-00-01.gwndkto.mongodb.net:27017,ac-vaaawja-shard-00-02.gwndkto.mongodb.net:27017/?ssl=true&replicaSet=atlas-oe7yp1-shard-0&authSource=admin&retryWrites=true&w=majority`
+    //your monogodb link
   );
   console.log("Database connected");
 } catch (err) {
